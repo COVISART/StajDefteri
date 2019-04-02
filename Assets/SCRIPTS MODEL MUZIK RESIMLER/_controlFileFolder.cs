@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
+//INTERFACE EKLENDİ
 public class _controlFileFolder : IPaths, IFileFolder, IYazdir, IEDownload
 {
     #region ----------------------------------------DOSYA VAR MI----------------------------------------------------
