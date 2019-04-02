@@ -1,0 +1,18 @@
+﻿<kisiler kolleksiyonmu="true">
+  
+  <kisi id="1" gizli="true">
+    <ad>Murat</ad>
+    <soyad>Başeren</soyad>
+  </kisi>
+
+  <kisi id="2" gizli="false">
+    <ad>Şükran</ad>
+    <soyad>Başeren</soyad>
+  </kisi>
+
+  <kisi id="3" gizli="true">
+    <ad>Belinay</ad>
+    <soyad>Başeren</soyad>
+  </kisi>
+
+</kisiler>
