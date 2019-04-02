@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.sarigozoglu.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\unity projeler\\SarigozOglu\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "SarigozOglu [Testing]"
+        }
+      }
+    }
+  ]
+}
