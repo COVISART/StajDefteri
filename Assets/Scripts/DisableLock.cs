@@ -10,15 +10,25 @@ namespace Valve.VR.InteractionSystem.Sample
         public LockToPoint[] Products;
         public Text text;
         public bool IsLockDisabled;
+        public MeshRenderer colorSate;
         public void DisableLockToPoint()
         {
             foreach (LockToPoint product in Products)
             {
                 product.enabled = IsLockDisabled;
             }
-            IsLockDisabled = !IsLockDisabled;
+
+            if (Products[0].enabled)
+            {
+                colorSate.material.color = Color.green;
+            }
+            else
+            {
+                colorSate.material.color = Color.white;
+            }
             Debug.Log("IsLockDisabled:" + IsLockDisabled.ToString());
             text.text = "IsLockDisabled:" + IsLockDisabled.ToString();
+            IsLockDisabled = !IsLockDisabled;   
         }
     }
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Patlatma : MonoBehaviour {
 
-	public GameObject inceleme_object;
-	public GameObject sabit_object;
+	public GameObject incelemeObject;
+	public GameObject sabitObject;
 	public Animator anim;
-	Component[] object_components;
+	Component[] objectComponents;
     private bool state = true;
 
     // Update is called once per frame
@@ -18,8 +18,8 @@ public class Patlatma : MonoBehaviour {
 		{
 			if(anim.GetCurrentAnimatorStateInfo(0).IsName("end"))
 			{
-				sabit_object.SetActive (false);
-				inceleme_object.SetActive (true);
+				sabitObject.SetActive (false);
+				incelemeObject.SetActive (true);
                 //activate attach object feature
                 state = false;
                 Debug.Log("state = set false");
@@ -47,11 +47,11 @@ public class Patlatma : MonoBehaviour {
 
     void topla()
     {
-        if (!sabit_object.activeInHierarchy)
+        if (!sabitObject.activeInHierarchy)
         {
             Debug.Log("Topla");
-            sabit_object.SetActive(true);
-            inceleme_object.SetActive(false);
+            sabitObject.SetActive(true);
+            incelemeObject.SetActive(false);
             anim.Play("Topla");
         }
     }
