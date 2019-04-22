@@ -8,7 +8,7 @@ public class _menuKontrolcusu : MonoBehaviour
 {
     //------------------------------------------------------------------------------------------------------------------------------------
     //DEĞİŞKENLER 
-    public float kategoriAdim = 5f;
+    //public float kategoriAdim = 5f;
 
     //BAĞLANMASI GEREKENLER
     public GameObject kopyalaItem; //Kopyalanacak Ağaç Itemi RAWIMAGE
@@ -93,7 +93,7 @@ public class _menuKontrolcusu : MonoBehaviour
     #region ------------------------------------------MENUYU BOSALTMA------------------------------------------
     private void setItemleri_Silme(Transform content1){
         int count = content1.childCount;
-        Debug.Log("---------------------Çocuk sayısı: " + count+"------------------------------------");
+        //Debug.Log("---------------------Çocuk sayısı: " + count+"------------------------------------");
 
         if (content.childCount>1)
         {
@@ -105,7 +105,7 @@ public class _menuKontrolcusu : MonoBehaviour
 
             
             }
-            Debug.Log("silindikten sonraki çocuk sayısı: " + content1.childCount);
+            //Debug.Log("silindikten sonraki çocuk sayısı: " + content1.childCount);
         }
         
 

@@ -78,7 +78,7 @@ public class _modelImport : MonoBehaviour
         getObj_PathResourceModel(isim);
     }
     //DOSYA YOKSA SERVERDAN İNDİRME İŞLEMİ -------FBXLİSİ-----------
-    public IEnumerator IDownloadImportFbxMenu(string urlServer, string isim, string path,_menuKontrolcusu menuKontroller)
+    public IEnumerator IDownloadImportFbxMenu(string urlServer, string isim, string path,_contentKontrolcusu menuKontroller)
     {
         //FBX DOSYASI OLUP OLMADIĞININ KONTROLÜNÜ YAPAR
         if (fileFolder.getVarMiDosya(path + isim))
@@ -94,7 +94,7 @@ public class _modelImport : MonoBehaviour
         }
 
         yield return fileFolder.IDownload(urlServer, isim, path);
-        menuKontroller.setMENU_YAP(getObj_PathResourceModel(isim));
+        menuKontroller.createMenuItemNew(getObj_PathResourceModel(isim));
     }
 
     #endregion

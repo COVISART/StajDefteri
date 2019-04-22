@@ -7,10 +7,13 @@ public class _modelImportKontrolcusu : MonoBehaviour
 {
     //TEST İÇİN MODEL SINIFI
     public _modelImport model;
-    public _menuKontrolcusu menuKontroller;
+    public _contentKontrolcusu menuKontroller;
     void Start(){
-        model = GetComponent<_modelImport>();               if (model == null) { Debug.LogError("Model importer script yok"); }
-        menuKontroller = GetComponent<_menuKontrolcusu>();   if (menuKontroller == null) { Debug.LogError("Menu Kontroller script yok"); }
+        model = GetComponent<_modelImport>();
+        if (model == null) { Debug.LogError("Model importer script yok"); }
+
+        if (menuKontroller == null) menuKontroller = GetComponent<_contentKontrolcusu>();
+        if (menuKontroller == null) { Debug.LogError("Menu Kontroller script yok"); }
     }
 
     void Update()
